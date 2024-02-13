@@ -1,0 +1,1146 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun 26 08:58:51 2023
+# Process ID: 10448
+# Current directory: E:/Code/Vivado/SinglecycleCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11980 E:\Code\Vivado\SinglecycleCPU\SinglecycleCPU.xpr
+# Log file: E:/Code/Vivado/SinglecycleCPU/vivado.log
+# Journal file: E:/Code/Vivado/SinglecycleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 848.766 ; gain = 203.918
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292B62258A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:04:25 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:06:20 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 09:06:21 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:11:33 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 09:11:33 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:14:42 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 09:14:42 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:18:17 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 09:18:17 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:23:39 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 09:23:39 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/dm_controller.edf] -no_script -reset -force -quiet
+remove_files  E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/dm_controller.edf
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:24:22 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 09:24:22 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:26:28 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 09:26:28 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Warning: Cannot create '3003:microblaze64' GDB server: 
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2015.730 ; gain = 92.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Enter' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Enter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Enter' (1#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Enter.v:21]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/clk_div.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (2#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/clk_div.v:2]
+WARNING: [Synth 8-350] instance 'U8_clk_div' of module 'clk_div' requires 6 connections, but only 5 given [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/top.v:62]
+INFO: [Synth 8-6157] synthesizing module 'SCPU' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/SCPU.v:16]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/ctrl.v:4]
+WARNING: [Synth 8-3848] Net GPRSel in module/entity ctrl does not have driver. [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/ctrl.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (3#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/ctrl.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (4#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/NPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (5#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/NPC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EXT' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/EXT.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'EXT' (6#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/EXT.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RF' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/RF.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (7#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/RF.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/alu.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/SCPU.v:113]
+WARNING: [Synth 8-3848] Net CPU_MIO in module/entity SCPU does not have driver. [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/SCPU.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU' (9#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/SCPU.v:16]
+INFO: [Synth 8-6157] synthesizing module 'ROM_D' [E:/Code/Vivado/SinglecycleCPU/.Xil/Vivado-10448-LAPTOP-DTRDI6H5/realtime/ROM_D_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_D' (10#1) [E:/Code/Vivado/SinglecycleCPU/.Xil/Vivado-10448-LAPTOP-DTRDI6H5/realtime/ROM_D_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dm_controller' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/dm_controller.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'dm_controller' (11#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/dm_controller.v:17]
+INFO: [Synth 8-6157] synthesizing module 'RAM_B' [E:/Code/Vivado/SinglecycleCPU/.Xil/Vivado-10448-LAPTOP-DTRDI6H5/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_B' (12#1) [E:/Code/Vivado/SinglecycleCPU/.Xil/Vivado-10448-LAPTOP-DTRDI6H5/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/MIO_BUS.V:15]
+WARNING: [Synth 8-350] instance 'U4_MIO_BUS' of module 'MIO_BUS' requires 21 connections, but only 20 given [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/top.v:73]
+INFO: [Synth 8-6157] synthesizing module 'Multi_8CH32' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Multi_8CH32.v:15]
+WARNING: [Synth 8-689] width (1024) of port connection 'data1' does not match port width (32) of module 'Multi_8CH32_bbox_1' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/top.v:82]
+WARNING: [Synth 8-689] width (4096) of port connection 'point_in' does not match port width (64) of module 'Multi_8CH32_bbox_1' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/top.v:84]
+INFO: [Synth 8-6157] synthesizing module 'SSeg7' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/SSeg7.v:15]
+INFO: [Synth 8-6157] synthesizing module 'SPIO' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/SPIO.v:15]
+WARNING: [Synth 8-350] instance 'U7_SPIO' of module 'SPIO' requires 8 connections, but only 7 given [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/top.v:91]
+INFO: [Synth 8-6157] synthesizing module 'Counter_x' [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:21]
+WARNING: [Synth 8-6014] Unused sequential element counter1_Lock_reg was removed.  [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:45]
+WARNING: [Synth 8-6014] Unused sequential element counter2_Lock_reg was removed.  [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:45]
+WARNING: [Synth 8-6014] Unused sequential element M1_reg was removed.  [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:50]
+WARNING: [Synth 8-6014] Unused sequential element M2_reg was removed.  [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:51]
+WARNING: [Synth 8-5788] Register M0_reg in module Counter_x is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:49]
+WARNING: [Synth 8-5788] Register clr0_reg in module Counter_x is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:71]
+WARNING: [Synth 8-3848] Net counter1 in module/entity Counter_x does not have driver. [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:36]
+WARNING: [Synth 8-3848] Net counter2 in module/entity Counter_x does not have driver. [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Counter_x' (13#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/Counter_3_IO.v:21]
+WARNING: [Synth 8-350] instance 'U9_Counter_x' of module 'Counter_x' requires 12 connections, but only 11 given [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/top.v:95]
+WARNING: [Synth 8-3848] Net counter_out in module/entity top does not have driver. [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/top.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'top' (14#1) [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/top.v:23]
+WARNING: [Synth 8-3331] design Counter_x has unconnected port counter1_OUT
+WARNING: [Synth 8-3331] design Counter_x has unconnected port counter2_OUT
+WARNING: [Synth 8-3331] design Counter_x has unconnected port clk1
+WARNING: [Synth 8-3331] design Counter_x has unconnected port clk2
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[31]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[30]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[29]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[28]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[27]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[26]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[25]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[24]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[23]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[22]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[21]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[20]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[19]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[18]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[17]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[16]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[15]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[14]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[13]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[12]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[11]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[10]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[9]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[8]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[7]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[6]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[5]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[4]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[3]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[2]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[1]
+WARNING: [Synth 8-3331] design dm_controller has unconnected port Addr_in[0]
+WARNING: [Synth 8-3331] design ctrl has unconnected port GPRSel[1]
+WARNING: [Synth 8-3331] design ctrl has unconnected port GPRSel[0]
+WARNING: [Synth 8-3331] design SCPU has unconnected port CPU_MIO
+WARNING: [Synth 8-3331] design SCPU has unconnected port MIO_ready
+WARNING: [Synth 8-3331] design SCPU has unconnected port INT
+WARNING: [Synth 8-3331] design Enter has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2060.984 ; gain = 137.930
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2060.984 ; gain = 137.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2060.984 ; gain = 137.930
+---------------------------------------------------------------------------------
+Parsing EDIF File [./SinglecycleCPU.srcs/sources_1/imports/SCPU/MIO_BUS.edf]
+Finished Parsing EDIF File [./SinglecycleCPU.srcs/sources_1/imports/SCPU/MIO_BUS.edf]
+Parsing EDIF File [./SinglecycleCPU.srcs/sources_1/imports/SCPU/Multi_8CH32.edf]
+Finished Parsing EDIF File [./SinglecycleCPU.srcs/sources_1/imports/SCPU/Multi_8CH32.edf]
+Parsing EDIF File [./SinglecycleCPU.srcs/sources_1/imports/SCPU/SSeg7.edf]
+Finished Parsing EDIF File [./SinglecycleCPU.srcs/sources_1/imports/SCPU/SSeg7.edf]
+Parsing EDIF File [./SinglecycleCPU.srcs/sources_1/imports/SCPU/SPIO.edf]
+Finished Parsing EDIF File [./SinglecycleCPU.srcs/sources_1/imports/SCPU/SPIO.edf]
+INFO: [Project 1-454] Reading design checkpoint 'e:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.dcp' for cell 'U2_ROMD'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/RAM_B/RAM_B.dcp' for cell 'U4_RAM_B'
+INFO: [Netlist 29-17] Analyzing 161 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/Cpu_data2bus_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/addr_bus_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/led_out_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/mem_w_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U4_MIO_BUS/ram_data_out_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U6_SSeg7/Hexs_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U6_SSeg7/Hexs_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U6_SSeg7/Hexs_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U6_SSeg7/Hexs_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. U6_SSeg7/Hexs_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Common 17-14] Message 'Opt 31-32' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[22]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[23]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[24]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[22]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[23]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[24]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[25]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[26]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[27]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[28]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[29]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[30]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[31]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Cpu_data4bus_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/GPIOe0000000_we_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/GPIOf0000000_we_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[22]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[23]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[24]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[25]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[26]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[27]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[28]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[29]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[30]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[31]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/Peripheral_in_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/counter_we_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/data_ram_we_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[31]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[30]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[29]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[28]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[27]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[26]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_data_in_OBUF[25]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. U4_MIO_BUS/ram_addr_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+INFO: [Common 17-14] Message 'Opt 31-33' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[7]_inst, from the path connected to top-level port: sw_i[7] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[6]_inst, from the path connected to top-level port: sw_i[6] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, U4_MIO_BUS/SW_IBUF[5]_inst, from the path connected to top-level port: sw_i[5] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+CRITICAL WARNING: [Shape Builder 18-119] Failed to create I/OLOGIC Route Through shape for instance U6_SSeg7/SW0_IBUF_inst. Found overlapping instances within the shape: U4_MIO_BUS/SW_IBUF[0]_inst and U6_SSeg7/SW0_IBUF_inst.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/constrs_1/imports/SCPU/icf.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port sw_i[0] can not be placed on PACKAGE_PIN J15 because the PACKAGE_PIN is occupied by port sw_i[0] [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/constrs_1/imports/SCPU/icf.xdc:26]
+Finished Parsing XDC File [E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/constrs_1/imports/SCPU/icf.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2426.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 2528.004 ; gain = 604.949
+46 Infos, 262 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 2528.004 ; gain = 605.555
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:40:04 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 09:40:04 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 09:53:06 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 09:53:06 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 10:05:23 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 10:05:23 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 10:05:57 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 10:05:57 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 10:08:22 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 10:08:22 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 10:13:03 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 10:13:03 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 10:18:55 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 10:18:55 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B62258A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 10:50:43 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 10:50:43 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 10:53:39 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 10:53:39 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B62258A
+export_ip_user_files -of_objects  [get_files E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/dm_controller.v] -no_script -reset -force -quiet
+remove_files  E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/dm_controller.v
+add_files -norecurse E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/zhy_dm_controller.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 11:31:32 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 11:31:32 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/ip/ROM_D/ROM_D.xci' is already up-to-date
+[Mon Jun 26 11:35:02 2023] Launched synth_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/synth_1/runme.log
+[Mon Jun 26 11:35:02 2023] Launched impl_1...
+Run output will be captured here: E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B62258A
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+export_ip_user_files -of_objects  [get_files E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/zhy_dm_controller.v] -no_script -reset -force -quiet
+remove_files  E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/zhy_dm_controller.v
+file delete -force E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/zhy_dm_controller.v
+add_files -norecurse E:/Code/Vivado/SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/dm_controller.v
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 26 11:38:31 2023...

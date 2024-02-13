@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul  6 20:21:57 2023
+# Process ID: 20524
+# Current directory: E:/Code/Vivado/Player/Player.runs/Font_synth_1
+# Command line: vivado.exe -log Font.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Font.tcl
+# Log file: E:/Code/Vivado/Player/Player.runs/Font_synth_1/Font.vds
+# Journal file: E:/Code/Vivado/Player/Player.runs/Font_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Font.tcl -notrace

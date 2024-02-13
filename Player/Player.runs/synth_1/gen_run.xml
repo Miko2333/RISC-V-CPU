@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1689340137">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/Pic/Pic.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/SPIO.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/SPIO.edf"/>
+        <Attr Name="ImportTime" Val="1687257580"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/SSeg7.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/SSeg7.edf"/>
+        <Attr Name="ImportTime" Val="1687257544"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/Multi_8CH32.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/Multi_8CH32.edf"/>
+        <Attr Name="ImportTime" Val="1687257348"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/MIO_BUS.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/MIO_BUS.edf"/>
+        <Attr Name="ImportTime" Val="1687257436"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/Counter_3_IO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/Counter_3_IO.v"/>
+        <Attr Name="ImportTime" Val="1451875044"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/ctrl_encode_def.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/ctrl_encode_def.v"/>
+        <Attr Name="ImportTime" Val="1685800042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/EXT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/EXT.v"/>
+        <Attr Name="ImportTime" Val="1685800042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/Enter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/Enter.v"/>
+        <Attr Name="ImportTime" Val="1686492357"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/MIO_BUS.V">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/MIO_BUS.V"/>
+        <Attr Name="ImportTime" Val="1687257474"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/Multi_8CH32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/Multi_8CH32.v"/>
+        <Attr Name="ImportTime" Val="1687257378"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/PC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/PC.v"/>
+        <Attr Name="ImportTime" Val="1685802204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/PWM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/RF.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/RF.v"/>
+        <Attr Name="ImportTime" Val="1687695286"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/SCPU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/SCPU.v"/>
+        <Attr Name="ImportTime" Val="1687256632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/SPIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/SPIO.v"/>
+        <Attr Name="ImportTime" Val="1687257600"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/SSeg7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/SSeg7.v"/>
+        <Attr Name="ImportTime" Val="1687257522"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/VGA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/VGA_BUS.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/VGA_Scan.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/alu.v"/>
+        <Attr Name="ImportTime" Val="1685800042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/clk_div.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/clk_div.v"/>
+        <Attr Name="ImportTime" Val="1686558464"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/ctrl.v"/>
+        <Attr Name="ImportTime" Val="1687697324"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/dm_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SinglecycleCPU/SinglecycleCPU.srcs/sources_1/imports/SCPU/dm_controller.v"/>
+        <Attr Name="ImportTime" Val="1687745920"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/hazard.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PipelineCPU/PipelineCPU.srcs/sources_1/imports/SCPU/hazard.v"/>
+        <Attr Name="ImportTime" Val="1687936068"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/pipeline.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PipelineCPU/PipelineCPU.srcs/sources_1/imports/SCPU/pipeline.v"/>
+        <Attr Name="ImportTime" Val="1687936344"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SCPU/top.v"/>
+        <Attr Name="ImportTime" Val="1687433954"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/PS2IO.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/PS2KB.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/I_mem.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PipelineCPU/PipelineCPU.srcs/sources_1/imports/SCPU/I_mem.coe"/>
+        <Attr Name="ImportTime" Val="1687827641"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/D_mem.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PipelineCPU/PipelineCPU.srcs/sources_1/imports/SCPU/D_mem.coe"/>
+        <Attr Name="ImportTime" Val="1687827640"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/test.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PipelineCPU/PipelineCPU.srcs/sources_1/imports/SCPU/test.coe"/>
+        <Attr Name="ImportTime" Val="1687662379"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/2_D_mem.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PipelineCPU/PipelineCPU.srcs/sources_1/imports/SCPU/2_D_mem.coe"/>
+        <Attr Name="ImportTime" Val="1687352726"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/font_ascii_8_8.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/Pic320.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/Pic.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/white.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/Monika.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/Long.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SCPU/Inst.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/SCPU/icf-v-p.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="RAM_B"/>
+  <BlockFileSet Type="BlockSrcs" Name="Font"/>
+  <BlockFileSet Type="BlockSrcs" Name="ROM_D"/>
+</GenRun>

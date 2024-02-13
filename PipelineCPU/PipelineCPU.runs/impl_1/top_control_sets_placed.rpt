@@ -1,0 +1,428 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 14 22:49:05 2023
+| Host         : LAPTOP-DTRDI6H5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   354 |
+| Unused register locations in slices containing registers |  1645 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           34 |
+|      2 |           19 |
+|      3 |          126 |
+|      4 |          148 |
+|      6 |            1 |
+|      8 |            1 |
+|      9 |            3 |
+|     11 |            1 |
+|     12 |            5 |
+|     15 |            1 |
+|    16+ |           15 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             102 |           53 |
+| No           | No                    | Yes                    |             629 |          227 |
+| No           | Yes                   | No                     |               4 |            1 |
+| Yes          | No                    | No                     |               8 |            7 |
+| Yes          | No                    | Yes                    |            1260 |          810 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+------------------------------------+----------------------------------+------------------+----------------+
+|        Clock Signal       |            Enable Signal           |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++---------------------------+------------------------------------+----------------------------------+------------------+----------------+
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+|  IO_clk_BUFG              |                                    |                                  |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+|  clkdiv_BUFG[6]           |                                    |                                  |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/AR[0]               |                1 |              1 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/rstn[0]             |                1 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/rstn[0]             |                1 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/rstn[0]             |                1 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/rstn[0]             |                1 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/rstn[0]             |                1 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/rstn[0]             |                1 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+|  clkdiv_BUFG[6]           |                                    | U1_SCPU/U_RF/AR[0]               |                2 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/rstn[0]             |                1 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+|  IO_clk_BUFG              |                                    | U1_SCPU/U_RF/rstn[0]             |                1 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              2 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/rstn[4]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/rstn[1]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/rstn[6]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/rstn[3]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/rstn[1]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/rstn[0]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/rstn[4]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/rstn[1]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/rstn[3]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/rstn[5]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/rstn[2]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/rstn[1]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/rstn[4]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/rstn[6]             |                1 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/rstn[8]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/rstn[7]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/rstn[0]             |                1 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/rstn[6]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/rstn[3]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/rstn[5]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/rstn[6]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/rstn[8]             |                1 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/rstn[2]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/rstn[0]             |                1 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/rstn[4]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/rstn[1]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/rstn[4]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/rstn[7]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/rstn[7]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/rstn[8]             |                1 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/rstn[1]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/rstn[7]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/rstn[6]             |                1 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/rstn[2]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/rstn[5]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/rstn[6]             |                1 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/rstn[1]             |                1 |              3 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/rstn[4]             |                1 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/rstn[1]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              3 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/rstn[2]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/rstn[1]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/rstn[7]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/rstn[3]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/rstn[4]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/rstn[8]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/rstn[0]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/rstn[2]             |                2 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/rstn[8]             |                3 |              3 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/rstn[1]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/rstn[6]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/rstn[8]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/rstn[4]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/rstn[2]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_5[0]  | U1_SCPU/U_RF/rstn[1]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/rstn[8]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/rstn[4]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_7[0]  | U1_SCPU/U_RF/rstn[1]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/rstn[6]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/rstn[3]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/rstn[8]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_9[0]  | U1_SCPU/U_RF/rstn[1]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/rstn[3]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/rstn[5]             |                3 |              4 |
+|  U6_SSeg7/flash_IBUF_BUFG |                                    |                                  |                3 |              4 |
+|  U1_SCPU/U_EX/E[0]        |                                    | U1_SCPU/U_EX/MemWrite_w_reg_0[0] |                1 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/rstn[7]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_24[0] | U1_SCPU/U_RF/rstn[2]             |                4 |              4 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/rstn[4]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/rstn[6]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/rstn[5]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/rstn[8]             |                4 |              4 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/rstn[5]             |                1 |              4 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/rstn[8]             |                2 |              4 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/rstn[7]             |                1 |              4 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_EX/WDSel_w_reg[0]_1[0]   | U1_SCPU/U_RF/rstn[1]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_27[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/rstn[8]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_17[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/rstn[2]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_3[0]  | U1_SCPU/U_RF/rstn[1]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/rstn[7]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/rstn[3]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/rstn[4]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/rstn[7]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_6[0]  | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/rstn[7]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_28[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/rstn[3]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/rstn[5]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/rstn[8]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_23[0] | U1_SCPU/U_RF/rstn[1]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_15[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/rstn[7]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_8[0]  | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/rstn[6]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/rstn[8]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/rstn[7]             |                1 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_10[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/rstn[4]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_1[0]  | U1_SCPU/U_RF/rstn[1]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_12[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/rstn[7]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_14[0] | U1_SCPU/U_RF/rstn[2]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_18[0] | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/rstn[3]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/rstn[7]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_16[0] | U1_SCPU/U_RF/rstn[2]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_19[0] | U1_SCPU/U_RF/rstn[1]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/rstn[5]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/rstn[4]             |                1 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/rstn[7]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_20[0] | U1_SCPU/U_RF/rstn[2]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_2[0]  | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/rstn[3]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/rstn[5]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/rstn[5]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_22[0] | U1_SCPU/U_RF/rstn[2]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/rstn[6]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/rstn[7]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_26[0] | U1_SCPU/U_RF/rstn[2]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/rstn[8]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/rstn[1]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/rstn[8]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/rstn[6]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/rstn[4]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/rstn[7]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_13[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_4[0]  | U1_SCPU/U_RF/rstn[2]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/rstn[6]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/rstn[5]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/rstn[8]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/rstn[7]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_29[0] | U1_SCPU/U_RF/rstn[1]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_21[0] | U1_SCPU/U_RF/rstn[1]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/rstn[6]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/rstn[3]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/rstn[8]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/rstn[5]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/rstn[4]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/rstn[7]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_30[0] | U1_SCPU/U_RF/rstn[2]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_11[0] | U1_SCPU/U_RF/rstn[1]             |                2 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/rstn[6]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/rstn[8]             |                4 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_25[0] | U1_SCPU/U_RF/rstn[3]             |                3 |              4 |
+| ~Clk_CPU_BUFG             | U1_SCPU/U_MEM/RegWrite_w_reg_0[0]  | U1_SCPU/U_RF/rstn[2]             |                4 |              4 |
+|  clk_IBUF_BUFG            |                                    | U1_SCPU/U_RF/rstn[0]             |                1 |              4 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/rstn[0]             |                5 |              6 |
+|  U6_SSeg7/flash_IBUF_BUFG | U6_SSeg7/seg_sout[7]_i_1_n_0       |                                  |                7 |              8 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/rstn[2]             |                3 |              9 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/rstn[6]             |                5 |              9 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/rstn[4]             |                6 |              9 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_ID/PC[31]_i_4_0          | U1_SCPU/U_ID/rstn[0]             |                5 |             11 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/rstn[1]             |                3 |             12 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/rstn[8]             |                8 |             12 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/rstn[5]             |                5 |             12 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/rstn[3]             |                7 |             12 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/rstn[7]             |                5 |             12 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_IF/AR[0]               |                5 |             15 |
+|  clk_IBUF_BUFG            |                                    | U1_SCPU/U_RF/AR[0]               |                7 |             28 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_RF/AR[0]               |               11 |             31 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_ID/E[0]                  | U1_SCPU/U_IF/AR[0]               |               11 |             32 |
+|  IO_clk_BUFG              | U4_MIO_BUS/GPIOe0000000_we_OBUF    | U1_SCPU/U_EX/AR[0]               |               15 |             32 |
+|  IO_clk_BUFG              | U9_Counter_x/counter0_Lock_0       | U1_SCPU/U_RF/rstn[0]             |               11 |             32 |
+|  write_data               |                                    |                                  |               13 |             32 |
+|  n_1_2000_BUFG            |                                    |                                  |               15 |             32 |
+|  clkdiv_BUFG[6]           | U9_Counter_x/counter0[31]          | U1_SCPU/U_RF/AR[0]               |                9 |             32 |
+|  n_0_1687_BUFG            |                                    |                                  |               20 |             32 |
+|  U7_SPIO/clk_IBUF_BUFG    | U4_MIO_BUS/GPIOf0000000_we_OBUF    | U1_SCPU/U_RF/rstn[0]             |               14 |             32 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_EX/AR[0]               |               11 |             33 |
+|  U6_SSeg7/clk_IBUF_BUFG   |                                    | U1_SCPU/U_EX/AR[0]               |               18 |             48 |
+|  Clk_CPU_BUFG             | U1_SCPU/U_ID/PC[31]_i_4_0          | U1_SCPU/U_IF/AR[0]               |               21 |             65 |
+|  Clk_CPU_BUFG             |                                    | U1_SCPU/U_ID/rstn[0]             |               28 |            101 |
+|  IO_clk_BUFG              |                                    | U1_SCPU/U_EX/AR[0]               |               96 |            272 |
++---------------------------+------------------------------------+----------------------------------+------------------+----------------+
+
+
